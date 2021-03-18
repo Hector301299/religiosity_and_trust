@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Introduccion
+{% endblock %}
+
+{% block content %}
+    Usted está participando en un experimento de decisión. El experimento
+    consiste de dos partes. En la primera parte, se le presentará un
+    cuestionario con algunas preguntas relacionados a diversos temas de
+    opinión. En la segunda parte, usted participará en un juego.
+    <p></p>
+    {% next_button %}
+{% endblock %}

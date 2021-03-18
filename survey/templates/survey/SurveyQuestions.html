@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Cuestionario
+{% endblock %}
+
+{% block content %}
+    <p>A continuación, se le presenta un cuestionario sobre diversos temas de opinión.</p>
+    <p>No hay respuesta correcta o incorrecta, por lo que debe responder en base a sus propias creencias.</p>
+    <p></p>
+    <i>Intrucciones: Lea detenidamente cada pregunta y seleccione su respuesta dando click en la casilla correspondiente.</i>
+    <p></p>
+    {% formfields %}
+    <p></p>
+    Haga click en "Siguiente" para finalizar la encuesta.
+    <p></p>
+    {% next_button %}
+{% endblock %}

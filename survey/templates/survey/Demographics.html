@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Parte 1: Cuestionario sobre diversos temas de opinión.
+{% endblock %}
+
+{% block content %}
+    <p>Como se indicó en la Introducción del experimento, a continuación usted deberá responder un cuestionario sobre diversos temas de opinión.</p>
+    <p>Antes de iniciar el cuestionario, le solicitamos responder a las siguientes preguntas.</p>
+    <p></p>
+    <i>Intrucciones: Lea detenidamente cada pregunta y seleccione su respuesta dando click en la casilla correspondiente.</i>
+    <p></p>
+    {% formfields %}
+    <p></p>
+    Haga click en "Next" para pasar al cuestionario sobre los temas de opinión.
+    <p></p>
+    {% next_button %}
+{% endblock %}

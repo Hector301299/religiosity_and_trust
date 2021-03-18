@@ -1,0 +1,41 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Resultados
+{% endblock %}
+
+{% block content %}
+
+    {% if player.id_in_group == 1 %}
+        <p>
+            Decidiste pasar al Participante B {{ group.sent_amount }}.
+            El Participante B te devolvió {{ group.sent_back_amount }}.
+        </p>
+        <p>
+            Al inicio de la ronda se te otorgaron {{ Constants.endowment }},
+            escogiste pasar {{ group.sent_amount }},
+            recibiste {{ group.sent_back_amount }}.
+            Por tanto, en esta ronda obtuviste:
+            {{ Constants.endowment }}-{{ group.sent_amount }}+{{ group.sent_back_amount }}=<strong>{{ player.payoff }}</strong>
+        </p>
+    {% else %}
+        <p>
+            El Participante A te envió {{ group.sent_amount }}.
+            Esta cantidad se multiplicó por {{ Constants.multiplier }}, convirtiéndose en {{ tripled_amount }}.
+            Decidiste pasar al Participante A {{ group.sent_back_amount }}.
+        </p>
+        <p>
+            Recibiste {{ tripled_amount }},
+            escogiste enviar {{ group.sent_back_amount }}.
+            Por tanto, en esta ronda obtuviste:
+            ({{ tripled_amount }})-({{ group.sent_back_amount }})=<strong>{{ player.payoff }}</strong>
+        </p>
+        .
+    {% endif %}
+
+    <p>{% next_button %}</p>
+
+    {% include Constants.instructions_template %}
+
+{% endblock %}

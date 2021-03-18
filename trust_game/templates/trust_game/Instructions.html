@@ -1,0 +1,38 @@
+{% load otree %}
+
+<div class="card bg-light m-3">
+    <div class="card_body">
+        <h3>
+            Instrucciones
+        </h3>
+        <p>
+            Usted está participando en un experimento de decisión. El juego consiste de 
+            {{ Constants.num_rounds }} rondas. En cada ronda tendrá la oportunidad de obtener algunos puntos. El
+            número de puntos que obtendrá dependerá de las decisiones que usted tome
+            y de las que tome el compañero con el que esté jugando en dicha ronda (el cual
+            será seleccionado aleatoriamente durante el juego).
+        </p>
+        <p>
+            En cada ronda hay {{ Constants.players_per_group }} participantes: el Participante A y el Participante B. Al
+            final del experimento usted habrá jugado ambos roles.
+            El Participante A tiene {{ Constants.endowment }} puntos y el Participante B, 0 puntos. El Participante
+            A debe decidir al inicio de la ronda, cuántos puntos pasará al Participante B.
+            Cada punto que el Participante A envíe al Participante B se multiplicará por
+            {{ Constants.multiplier }}. El Participante B deberá decidir –en base a lo que haya recibido- cuántos
+            puntos devolver al Participante A.
+            El Participante A recibirá <b>a veces</b> información sobre el Participante B. Esta
+            información será diferente en cada ronda y será acerca de las inclinaciones
+            del Participante B respecto a algunos temas de opinión. El Participante B
+            tomará su decisión sin saber 1) los puntos que el Participante A le ha pasado
+            y sin saber 2) la información que el Participante A tiene acerca de él.
+        </p>
+        <p>
+            A continuación se muestra un ejemplo del Experimento.
+            <b>Ejemplo: </b>El Participante A al incio de la ronda recibe 10 puntos. De esos 10 puntos, 
+            el Participante A pasa 3 puntos al Participante B (y se queda con 7 puntos). El Participante B 
+            recibe 3 x 3 puntos = 9 puntos. De esos 9 puntos, el Participante B pasa 4 puntos al Participante A 
+            (y se queda con 5 puntos). El Participante A recibe 4 puntos. Al final de la ronda, el Participante A 
+            obtiene un total de 7 + 4 = 11 puntos, mientras que el participante B obtiene un total de 5 puntos.
+        </p>
+    </div>
+</div>

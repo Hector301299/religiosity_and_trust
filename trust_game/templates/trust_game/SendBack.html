@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Tu decisión
+{% endblock %}
+
+{% block content %}
+<p>
+    En esta ronda usted posee el rol del Participante B. Usted tiene 0 puntos. El
+    participante A le ha enviado una determinada cantidad de puntos. En la casilla
+    de abajo coloque el número de puntos que desee devolver al Participante A y
+    luego haga click en "Next". En caso haya elegido un número de puntos que
+    exceda la cantidad que le envió el Participante A multiplicado por 3, el juego
+    enviará automáticamente todos los puntos que usted haya recibido.
+</p>
+
+    {% formfields %}
+    <p>{% next_button %}</p>
+    {% include Constants.instructions_template %}
+
+{% endblock %}
