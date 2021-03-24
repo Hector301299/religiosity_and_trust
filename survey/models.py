@@ -518,339 +518,302 @@ class Player(BasePlayer):
         return choices
     
     
-     q3 = models.StringField(
-        label="",
+     q31 = models.StringField(
+        label="¿Cuál es tu actitud hacia la fama?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q31_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Me gustaría ser famoso si eso me hace rico.",
+            "Me gustaría ser famoso aunque eso no me haga rico.",
+            "Me gustaría ser famoso siempre que no perturbe mi privacidad.",
+            "Prefiero no ser famoso."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q32 = models.StringField(
+        label="En su opinión, ¿cuál es el papel de un gobierno (marque todas las opciones que correspondan)?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q32_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Infraestructura del edificio.",
+            "Hacer cumplir las leyes.",
+            "Regulación de la economía.",
+            "Defensa nacional."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q33 = models.StringField(
+        label="¿Cómo se siente al tener poder político?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q33_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Esto me permite mejorar la calidad de vida de los demás.",
+            "Esto implica demasiada responsabilidad y no lo aceptaría.",
+            "Esto me permite lograr mis objetivos políticos.",
+            "No sé mucho de política y no me importa.",
+            "Es un negocio sucio y me apasiona tener poder político."
+        ]Es un negocio sucio y me apasiona tener poder político.
+        random.shuffle(choices)
+        return choices
+    
+      q34 = models.StringField(
+        label="¿Cómo te sientes acerca de poseer riquezas?",
+        widget=widgets.RadioSelect
+    )
+    def q34_choices(player):
+        choices=[
+            "Esto me da más libertad para hacer lo que quiero hacer.",
+            "Esto me limita demasiado y no puedo llevar una vida normal.",
+            "Eso no necesariamente me hace sentir mejor.",
+            "Seguramente mejorará la vida.",
+            "Esto es solo una preocupación y no creo que valga la pena."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q35 = models.StringField(
+        label="¿Qué parte del periódico es más importante para ti?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q35_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Finanzas / Economía.",
+            "Noticias locales.",
+            "Noticias regionales.",
+            "Noticias mundiales.",
+            "Deporte.",
+            "Estilo de vida."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q36 = models.StringField(
+        label="¿Cuál es su actitud hacia la protección del medio ambiente?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q36_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Esa no es nuestra responsabilidad.",
+            "Solo somos responsables como un solo individuo de no destruir la naturaleza.",
+            "Tenemos la responsabilidad de las generaciones futuras y, por tanto, deberíamos prestarle más atención.",
+            "Esto solo tiene sentido si los beneficios económicos superan los costos.",
+            "No me importa en absoluto.",
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q37 = models.StringField(
+        label="¿Qué opinas de los animales?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q37_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Son seres subordinados a los humanos y nosotros podemos decidir su destino.",
+            "Deben ser respetados y no asesinados por comer o hacer ejercicio.",
+            "Debemos comportarnos bien con ellos, pero los animales se pueden comer.",
+            "Son nuestros iguales y deben ser tratados como tales."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q38 = models.StringField(
+        label="¿Cuál es su uso principal de los periódicos?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q38_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Los leo para obtener información sobre los últimos acontecimientos.",
+            "Obtener nuevas opiniones.",
+            "Para relajarse.",
+            "a y b",
+            "b y c",
+            "a y c"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q39 = models.StringField(
+        label="¿Qué tipo de gobierno cree que representa el mejor liderazgo político?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q39_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Cualquier dictadura",
+            "Dictadura benévola",
+            "Democracia autoritaria",
+            "Democracia pura",
+            "Anarquía"
+        ]
+        random.shuffle(choices)
+        return choices
+   
+    
+      q40 = models.StringField(
+        label="¿Cuál es su opinión sobre el sistema de depósito?",
+        widget=widgets.RadioSelect
+    )
+    def q40_choices(player):
+        choices=[
+            "Económicamente ineficaz y una pérdida de tiempo.",
+            "Económicamente ineficiente pero valioso para el medio ambiente.",
+            "Económicamente eficiente y valioso para el medio ambiente."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q41 = models.StringField(
+        label="¿Cuánto deberían el gobierno y la gente comunicarse entre sí?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q41_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "No puedo molestarme en comunicarme con mi gobierno.",
+            "Es importante, pero imposible, que el gobierno y las personas se comuniquen libremente entre sí.",
+            "Es importante para la conexión mutua y la coherencia en todos los niveles.",
+            "Es importante, pero solo en una dirección, es decir, informar a la gente a través del gobierno.",
+            "Es importante que el gobierno sepa lo que quiere la gente, pero tiene la autoridad para tomar las decisiones en última instancia."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q42 = models.StringField(
+        label="¿Cuál es su deporte favorito?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q42_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Deportes para espectadores.",
+            "Deportes de equipo.",
+            "Deportes individuales.",
+            "Cualquier deporte sin violencia.",
+            "Deportes que impliquen violencia."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q43 = models.StringField(
+        label="¿Cómo define democracia?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q43_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Un sistema en el que todo el liderazgo es elegido por el pueblo.",
+            "Un sistema en el que todos puedan hablar libremente.",
+            "Un sistema en el que la legislación y la política son elegidas por el pueblo.",
+            "a y b",
+            "b y c",
+            "a, b y c"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q44 = models.StringField(
+        label="¿Cómo define el crimen?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q44_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Todo acto que atente contra la libertad de otra persona.",
+            "Cualquier acto tipificado como delito en la legislación de mi país.",
+            "Cualquier acto que esté tipificado como delito según la ley del país en el que me encuentre actualmente.",
+            "Cualquier acción que me haga sentir que no soy bueno para mí.",
+            "No hay delitos, solo depende de las definiciones sociales."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q45 = models.StringField(
+        label="En primer lugar, ¿cuál es su actitud hacia la guerra?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q45_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "La guerra es necesaria para mantener la soberanía.",
+            "La amenaza de guerra ayuda a mantener la paz.",
+            "La guerra cuesta vidas humanas y debe prohibirse.",
+            "La guerra es una forma de autodefensa.",
+            "La guerra es solo una forma arrogante de presentar el propio poder."
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q46 = models.StringField(
+        label="Me siento mejor cuando una tarea que hay que hacer es difícil.",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q46_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Fuerte aprobación",
+            "Consentimiento",
+            "Inseguro",
+            "Rechazo",
+            "Fuerte rechazo"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q47 = models.StringField(
+        label="A menudo he temido que mi libertad personal se vea amenazada por un cambio de gobierno.",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q47_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+           "Fuerte aprobación",
+            "Consentimiento",
+            "Inseguro",
+            "Rechazo",
+            "Fuerte rechazo"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q48 = models.StringField(
+        label="A veces siento que la influencia de la política en la educación y la enseñanza es negativa y fuerte.",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q48_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Fuerte aprobación",
+            "Consentimiento",
+            "Inseguro",
+            "Rechazo",
+            "Fuerte rechazo"
         ]
         random.shuffle(choices)
         return choices
     
     
-     q3 = models.StringField(
-        label="",
+     q49 = models.StringField(
+        label="Prefiero estar en la naturaleza a ir de compras cuando busco entretenimiento / diversión.",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q49_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Fuerte aprobación",
+            "Consentimiento",
+            "Inseguro",
+            "Rechazo",
+            "Fuerte rechazo"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q50 = models.StringField(
+        label="Hay momentos especiales en mi vida en los que me siento muy cerca de mi familia y amigos.",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def 50_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Fuerte aprobación",
+            "Consentimiento",
+            "Inseguro",
+            "Rechazo",
+            "Fuerte rechazo"
         ]
         random.shuffle(choices)
         return choices
