@@ -818,598 +818,153 @@ class Player(BasePlayer):
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q51 = models.StringField(
+        label="Me he sentido bien muchas veces cuando formaba parte de un equipo exitoso en el deporte.",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q51_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+             "Fuerte aprobación",
+            "Consentimiento",
+            "Inseguro",
+            "Rechazo",
+            "Fuerte rechazo"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q52 = models.StringField(
+        label="¿Con qué frecuencia dona a organizaciones benéficas?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q52_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            " Varias veces al mes",
+            "Varias veces al año",
+            "Con menos frecuencia",
+            "nunca"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q53 = models.StringField(
+        label="¿Con qué frecuencia ha participado en una protesta por motivos políticos?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q53_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Nunca antes",
+            "Una vez",
+            "Hasta cinco veces",
+            "Hasta diez veces",
+            "A menudo"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q54 = models.StringField(
+        label="¿Cuántas veces ha participado en un proyecto o actividad medioambiental?
+",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q54_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+           "Nunca antes",
+            "Una vez",
+            "Hasta cinco veces",
+            "Hasta diez veces",
+            "A menudo"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q55 = models.StringField(
+        label="¿Perteneces a un grupo de discusión política?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q55_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Si",
+            "No"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q56 = models.StringField(
+        label="¿Perteneces a una organización de protección del medio ambiente?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q56_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Si",
+            "No"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q57 = models.StringField(
+        label="¿Con qué frecuencia lees los periódicos?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q57_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Diario",
+            "Al menos una vez por semana",
+            "Al menos una vez al mes",
+            "Menos común"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q58 = models.StringField(
+        label="Indique los siguientes líderes políticos a) actuales b) ex c) ¿nunca han sido presidentes, primeros ministros o cancilleres?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q58_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Saddam Hussein a b c",
+            "Michael Dukakis a b c",
+            "Mahatma Gandhi a b c",
+            "Mohammad Mahathir a b c",
+            "René Ferreira a b c"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q59 = models.StringField(
+        label="¿Son o fueron las siguientes personas a) filósofos b) científicos c) economistas?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q59_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Galileo Galilea a b c",
+            "Immanuel Kant a b c",
+            "Adam Smith a b c",
+            "John Maynard Keynes a b c",
+            "John Maynard Smith a b c",
+            "Isaac Newton a b c",
+            "John Rawls a b c",
+            "Jeremy Bentham a b c"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
+      q60 = models.StringField(
+        label="¿Están las siguientes especies a) en peligro de extinción b) en peligro de extinción c) extintas?",
         widget=widgets.RadioSelect
     )
-    def q3_choices(player):
+    def q60_choices(player):
         choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Gran tiburón blanco a b c",
+            "Ballena azul a b c",
+            "Oro Arowana a b c",
+            "Oso panda a b c",
+            "Águila calva a b c",
+            "Dodo a b c"
         ]
         random.shuffle(choices)
         return choices
     
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-      q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-   q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
-    
-    
-    q3 = models.StringField(
-        label="",
-        widget=widgets.RadioSelect
-    )
-    def q3_choices(player):
-        choices=[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-        random.shuffle(choices)
-        return choices
     
     
     
